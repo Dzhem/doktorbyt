@@ -12,9 +12,9 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 /*
@@ -28,13 +28,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 /*
@@ -42,12 +42,12 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /*
@@ -62,7 +62,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /*
@@ -70,9 +70,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -80,7 +80,7 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 /* ==========================================================================
@@ -97,7 +97,7 @@ textarea {
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
 
 /*
@@ -110,16 +110,16 @@ textarea {
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
 
 /*
@@ -130,13 +130,13 @@ textarea {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
 
 /*
@@ -144,7 +144,7 @@ textarea {
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /*
@@ -161,12 +161,12 @@ textarea {
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
 
 /* ==========================================================================
@@ -176,14 +176,14 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -194,199 +194,242 @@ textarea {
 
 @media print {
 
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " ("attr(href) ")";
-  }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " ("attr(title) ")";
-  }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
 
-  /*
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+        white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-  /*
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
+    thead {
+        display: table-header-group;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
 
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2'), url('../fonts/Roboto.woff') format('woff'), url('../fonts/Roboto.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2'), url('../fonts/Roboto.woff') format('woff'), url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Italic'), local('Roboto-Italic'), url('../fonts/Robotoitalic.woff2') format('woff2'), url('../fonts/Robotoitalic.woff') format('woff'), url('../fonts/Robotoitalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'), url('../fonts/Robotoitalic.woff2') format('woff2'), url('../fonts/Robotoitalic.woff') format('woff'), url('../fonts/Robotoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
+
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Robotobold.woff2') format('woff2'), url('../fonts/Robotobold.woff') format('woff'), url('../fonts/Robotobold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Robotobold.woff2') format('woff2'), url('../fonts/Robotobold.woff') format('woff'), url('../fonts/Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('../fonts/Robotobolditalic.woff2') format('woff2'), url('../fonts/Robotobolditalic.woff') format('woff'), url('../fonts/Robotobolditalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
+    font-family: 'Roboto';
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('../fonts/Robotobolditalic.woff2') format('woff2'), url('../fonts/Robotobolditalic.woff') format('woff'), url('../fonts/Robotobolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
 }
+
 @font-face {
-  font-family: 'Museo Cyrl';
-  src: local('Museo Cyrl 900'), local('MuseoCyrl-900'), url('../fonts/Museo_Cyrl_900.woff') format('woff'), url('../fonts/Museocyrl-900.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'Museo Cyrl';
+    src: local('Museo Cyrl 900'), local('MuseoCyrl-900'), url('../fonts/Museo_Cyrl_900.woff') format('woff'), url('../fonts/Museocyrl-900.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h4 {
-  font-family: 'Museo Cyrl', sans-serif;
+h1,
+h2,
+h4 {
+    font-family: 'Museo Cyrl', sans-serif;
 }
 
 
 header {
-  background: #f6f6f6;
-  border-bottom: 2px solid #e1e1e1;
+    background: #f6f6f6;
+    border-bottom: 2px solid #e1e1e1;
 }
 
 .navbar .nav-item {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .navbar .nav-item .nav-link {
-  color: #000;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .navbar .nav-item .nav-link .nav-link:hover {
-  color: #0080fa;
+    color: #0080fa;
 }
 
 .navbar .nav-item .nav-link.active {
-  text-decoration: underline;
-  color: #f97f1a;
+    text-decoration: underline;
+    color: #f97f1a;
 }
 
-.navbar-toggler, .navbar-toggler:focus {
-  border: 1px solid #0080fa;
-  box-shadow: none;
+.navbar-toggler,
+.navbar-toggler:focus {
+    border: 1px solid #0080fa;
+    box-shadow: none;
 }
 
 .navbar .nav-item .number {
-  position: relative;
-  height: 46px;
-  width: 175px;
-  background: linear-gradient(90deg, #ffa61a, #f87a1a);
-  border-radius: 5px;
-  color: #fff;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding-right: 18px;
+    position: relative;
+    height: 46px;
+    width: 175px;
+    background: linear-gradient(90deg, #ffa61a, #f87a1a);
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 18px;
 }
 
 .navbar .nav-item .number:before {
-  height: 24px;
-  width: 24px;
-  content: " ";
-  background: url(../img/number-icon.png);
-  position: absolute;
-  left: 11px;
-  top: 25%;
+    height: 24px;
+    width: 24px;
+    content: " ";
+    background: url(../img/number-icon.png);
+    position: absolute;
+    left: 11px;
+    top: 25%;
 }
 
 .navbar .nav-item .number:hover {
-  filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 30%));
-  color: #fff;
+    filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 30%));
+    color: #fff;
 }
 
 
 .top-body {
-  background-image: url(../img/slider-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-image: url(../img/slider-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top-body-content {
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .top-body-content {
+        padding-right: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    .top-body-content {
+        padding-right: 25%;
+    }
 }
 
 .top-body-text {
-  margin-bottom: 10px;
-  padding-top: 32px;
+    margin-bottom: 25px;
+    padding-top: 32px;
 }
 
-.top-body-text > h1 {
-  margin-bottom: 15px;
+.top-body-text>h1 {
+    margin-bottom: 15px;
 }
 
-.top-body-text > h3 {
-  line-height: 24px;
+.top-body-text>h3 {
+    line-height: 24px;
+}
+
+.top-body-item {
+    display: flex;
+    align-items: center;
 }
 
 .top-body-item span {
-  margin-left: 10px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+    margin-left: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-body-order-submit {
+    padding: 3% 0;
+}
+
+.main-body-order-submit a {
+    display: inline-block;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #fea41a, #f97b1a);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 35px;
 }
