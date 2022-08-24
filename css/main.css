@@ -591,3 +591,35 @@ header {
     height: 55px;
     margin-bottom: 40px;
 }
+
+footer {
+    border-top: 2px solid #e1e1e1;
+}
+
+.footer-block {
+    min-height: 85px;
+}
+
+footer li {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0;
+    border-right: 1px solid #eaeaea;
+}
+
+nav li {
+    list-style-position: inside;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer-menu li img {
+    margin-right: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
