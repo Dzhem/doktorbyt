@@ -440,17 +440,10 @@ header {
     box-shadow: 0 3px 10px 0px rgb(0 0 0 / 20%);
 }
 
-.main-body .unset {
-    border-bottom-left-radius: unset;
-    border-bottom-right-radius: unset;
-}
-
 .main-body>.main-body-content {
     padding: 17px 7px;
     box-sizing: border-box;
     box-shadow: 0px 25px 20px 10px rgb(0 0 0 / 20%);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 .main-body-descr p {
@@ -492,4 +485,68 @@ header {
     .main-body-order-item span {
         margin-left: 5%;
     }
+}
+
+.main-body-services {
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.main-body-services-items a {
+    text-decoration: none;
+}
+
+.service-item-icon {
+    height: 70px;
+    width: 70px;
+    border: 2px solid #ececec;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    margin: 0 3%;
+}
+
+.main-body-services-item {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    box-shadow: 0px 8px 6px 0px rgb(0 0 0 / 10%);
+    border-radius: 40px;
+}
+
+.service-item-icon {
+    background-image: url(../img/services-icon.png);
+}
+
+.washer .service-item-icon {
+    background-image: url(../img/service-icon-1.png);
+}
+
+.fridge .service-item-icon {
+    background-image: url(../img/service-icon-2.png);
+}
+
+.dishwasher .service-item-icon {
+    background-image: url(../img/service-icon-3.png);
+}
+
+.tv .service-item-icon {
+    background-image: url(../img/service-icon-4.png);
+}
+
+.conditioner .service-item-icon {
+    background-image: url(../img/service-icon-5.png);
+}
+
+.installation .service-item-icon {
+    background-image: url(../img/service-icon-6.png);
+}
+
+.main-body-services-item span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
 }
