@@ -344,20 +344,22 @@ header {
     box-shadow: none;
 }
 
-.navbar .nav-item .number {
+header nav .phone,
+footer nav .phone {
     position: relative;
     height: 46px;
     width: 175px;
     background: linear-gradient(90deg, #ffa61a, #f87a1a);
     border-radius: 5px;
-    color: #fff;
+    color: #fff !important;
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: 18px;
 }
 
-.navbar .nav-item .number:before {
+header nav .phone:before,
+footer nav .phone:before {
     height: 24px;
     width: 24px;
     content: " ";
@@ -367,7 +369,8 @@ header {
     top: 25%;
 }
 
-.navbar .nav-item .number:hover {
+header nav .phone:hover,
+footer nav .phone:hover {
     filter: drop-shadow(0px 0px 3px rgb(0 0 0 / 30%));
     color: #fff;
 }
@@ -594,17 +597,19 @@ header {
 
 footer {
     border-top: 2px solid #e1e1e1;
+    padding: 1% 0;
 }
 
 .footer-block {
     min-height: 85px;
+    padding: 0 3%;
 }
 
 footer li {
     display: inline-block;
     padding: 5px 20px;
     margin: 0;
-    border-right: 1px solid #eaeaea;
+    /* border-right: 1px solid #eaeaea; */
 }
 
 nav li {
@@ -615,6 +620,15 @@ nav li {
     text-transform: uppercase;
 }
 
+.footer-menu {
+    padding: 0;
+}
+
+.footer-menu li {
+    display: flex;
+    align-items: center;
+}
+
 .footer-menu li img {
     margin-right: 5px;
 }
@@ -622,4 +636,8 @@ nav li {
 nav a {
     text-decoration: none;
     color: #000;
+}
+
+.footer-text {
+    padding: 0 80px;
 }
