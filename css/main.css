@@ -425,6 +425,10 @@ footer nav .phone:hover {
     text-transform: uppercase;
 }
 
+.main-body-order h2 {
+    margin-left: calc(var(--bs-gutter-x) * .5);
+}
+
 .main-body-order-submit {
     padding: 3% 0;
 }
@@ -640,4 +644,67 @@ nav a {
 
 .footer-text {
     padding: 0 80px;
+}
+
+.main-body-order form {
+    float: left;
+    position: relative;
+    height: 420px;
+    width: 100%;
+    max-width: 400px;
+    background: #0080fa;
+}
+
+/* .main-body-order form:before {
+    width: 100%;
+    max-width: 80px;
+    content: " ";
+    background: #0080fa;
+    position: absolute;
+    left: -80px;
+    top: 0;
+    height: 420px;
+    box-shadow: -15px 0px 20px 0px rgb(0 0 0 / 10%);
+    z-index: 1;
+} */
+
+.main-body-order form p {
+    padding: 30px 0;
+    line-height: 24px;
+    font-family: 'Museo Cyrl';
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.main-body-order form input,
+.main-body-order form textarea {
+    height: 36px;
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-body-order form textarea {
+    height: 100px;
+    font-family: inherit;
+    resize: none;
+}
+
+.main-body-order-submit {
+    margin-left: 38px;
+    margin-top: 30px;
+}
+
+.main-body-order-submit a {
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #fea41a, #f97b1a);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 35px;
 }
