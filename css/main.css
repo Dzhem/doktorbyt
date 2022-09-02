@@ -429,10 +429,6 @@ footer nav .phone:hover {
     margin-left: calc(var(--bs-gutter-x) * .5);
 }
 
-.main-body-order-submit {
-    padding: 3% 0;
-}
-
 .main-body-order-submit a {
     display: inline-block;
     padding: 20px 50px;
@@ -647,29 +643,14 @@ nav a {
 }
 
 .main-body-order form {
-    float: left;
-    position: relative;
-    height: 420px;
+    /* height: 420px; */
     width: 100%;
     max-width: 400px;
     background: #0080fa;
+    padding: 5%;
 }
 
-/* .main-body-order form:before {
-    width: 100%;
-    max-width: 80px;
-    content: " ";
-    background: #0080fa;
-    position: absolute;
-    left: -80px;
-    top: 0;
-    height: 420px;
-    box-shadow: -15px 0px 20px 0px rgb(0 0 0 / 10%);
-    z-index: 1;
-} */
-
 .main-body-order form p {
-    padding: 30px 0;
     line-height: 24px;
     font-family: 'Museo Cyrl';
     font-weight: 700;
@@ -682,7 +663,6 @@ nav a {
 .main-body-order form textarea {
     height: 36px;
     width: 100%;
-    max-width: 340px;
     margin-bottom: 15px;
     padding: 10px;
     box-sizing: border-box;
@@ -695,8 +675,9 @@ nav a {
 }
 
 .main-body-order-submit {
-    margin-left: 38px;
-    margin-top: 30px;
+    /* margin: 15px 0; */
+    display: flex;
+    justify-content: center;
 }
 
 .main-body-order-submit a {
