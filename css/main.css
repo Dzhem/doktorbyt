@@ -465,6 +465,11 @@ footer nav .phone:hover {
     display: block;
 }
 
+.main-body-order-items {
+    display: flex;
+    padding-top: 5%;
+}
+
 .main-body-order-item {
     display: flex;
     flex-direction: column;
