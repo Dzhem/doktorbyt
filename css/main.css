@@ -349,7 +349,7 @@ header nav .phone,
 footer nav .phone {
     position: relative;
     height: 46px;
-    width: 175px;
+    width: 170px;
     background: linear-gradient(90deg, #ffa61a, #f87a1a);
     border-radius: 5px;
     color: #fff !important;
