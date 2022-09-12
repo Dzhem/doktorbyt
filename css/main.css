@@ -468,7 +468,8 @@ footer nav .phone:hover {
     margin-top: 15px;
 }
 
-.main-body-descr a[href^="tel:"] {
+.main-body-descr a[href^="tel:"],
+.main-body-block a[href^="tel:"] {
     color: black;
     text-decoration: none;
 }
