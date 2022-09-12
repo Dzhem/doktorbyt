@@ -732,3 +732,52 @@ nav a {
 .main-body-block {
     padding: 1% 5%;
 }
+
+.main-body-services-block {
+    padding: 1% 5%;
+}
+
+.main-body-service {
+    display: grid;
+    grid-template-rows: 140px 70px 40px;
+    box-shadow: 0px 2px 8px -2px rgb(0 0 0 / 40%);
+}
+
+.main-body-service-top {
+    background: linear-gradient(90deg, #ffa51a, #f8791a);
+    padding: 20px 12px 0 20px;
+}
+
+.main-body-service-top h4 {
+    margin-bottom: 10px;
+}
+
+.main-body-service-top p {
+    line-height: 16px;
+    color: #fff;
+}
+
+.main-body-service-body {
+    display: inline-grid;
+    padding: 0 18px 0 20px;
+    align-items: center;
+}
+
+.main-body-service p {
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.main-body-service-button {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    background: #0071f9;
+}
+
+.main-body-service-button a {
+    padding: 10px 50px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
