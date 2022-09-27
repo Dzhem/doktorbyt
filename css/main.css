@@ -714,7 +714,7 @@ nav a {
     display: flex;
     height: 40px;
     box-sizing: border-box;
-    padding: 0 80px;
+    padding: 0 1%;
     background: #efefef;
 }
 
@@ -730,11 +730,11 @@ nav a {
 }
 
 .main-body-block {
-    padding: 1% 5%;
+    padding: 1% 1%;
 }
 
 .main-body-services-block {
-    padding: 1% 5%;
+    padding: 1% 1%;
 }
 
 .main-body-service {
@@ -787,4 +787,42 @@ nav a {
 .main-body-service-top h4 {
     margin-bottom: 10px;
     font-size: 16px;
+}
+
+.main-body-block table {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.main-body-block table th {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, #ffa61a, #f8791a);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.main-body-block table th span {
+    text-transform: none;
+    color: #313131;
+}
+
+.main-body-block table th, .main-body-block table td {
+    vertical-align: middle;
+    padding-left: 12px;
+    text-align: left;
+}
+
+.main-body-block table td {
+    height: 40px;
+    border-left: 2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;
+    background: #efefef;
+    font-size: 14px;
+}
+
+.main-body-block span {
+    line-height: 20px;
+    font-weight: bold;
 }
