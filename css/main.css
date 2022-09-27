@@ -810,7 +810,7 @@ nav a {
 
 .main-body-block table th, .main-body-block table td {
     vertical-align: middle;
-    padding-left: 12px;
+    padding: 5px;
     text-align: left;
 }
 
