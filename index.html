@@ -135,12 +135,13 @@
                         <h2>Оформите выезд мастера</h2>
                         <form id="tg" method="POST" action="sendTelegram.php">
                             <p>Заполните заявку<br>Или перезвоните нам!</p>
-                            <input type="text" name="name" placeholder="Ваше имя">
-                            <input type="text" name="phone" placeholder="Ваш телефон">
-                            <textarea rows="5" cols="40" name="description"
-                                placeholder="Опишите вашу проблему"></textarea>
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                            <textarea rows="5" cols="40" name="description" placeholder="Опишите вашу проблему"
+                                required></textarea>
                             <div class="main-body-order-submit" name="submit">
-                                <a href="tel:+79616918491">Отправить заявку</a>
+                                <button type="submit">Отправить сообщение</button>
+                                <!-- <a href="tel:+79616918491">Отправить заявку</a> -->
                             </div>
                         </form>
                     </div>
