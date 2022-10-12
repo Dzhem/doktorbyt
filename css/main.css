@@ -436,7 +436,8 @@ footer nav .phone:hover {
     margin-left: calc(var(--bs-gutter-x) * .5);
 }
 
-.main-body-order-submit a {
+.main-body-order-submit a,
+.main-body-order-submit button {
     display: inline-block;
     padding: 20px 50px;
     background: linear-gradient(90deg, #fea41a, #f97b1a);
@@ -445,9 +446,11 @@ footer nav .phone:hover {
     font-size: 18px;
     font-weight: 700;
     border-radius: 35px;
+    border: none;
 }
 
-.main-body-order-submit a:hover {
+.main-body-order-submit a:hover,
+.main-body-order-submit button:hover {
     box-shadow: 0 3px 10px 0px rgb(0 0 0 / 20%);
 }
 
@@ -700,16 +703,6 @@ nav a {
     justify-content: center;
 }
 
-.main-body-order-submit a {
-    padding: 20px 50px;
-    background: linear-gradient(90deg, #fea41a, #f97b1a);
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 35px;
-}
-
 .main-page-navigator>.wrapper {
     display: flex;
     height: 40px;
@@ -808,7 +801,8 @@ nav a {
     color: #313131;
 }
 
-.main-body-block table th, .main-body-block table td {
+.main-body-block table th,
+.main-body-block table td {
     vertical-align: middle;
     padding: 5px;
     text-align: left;
