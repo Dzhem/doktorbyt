@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../css/main.css">
 
     <meta name="theme-color" content="#0080FA">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -129,15 +130,16 @@
                 <div class="row">
                     <div class="col-12 col-md-5 ps-0">
                         <h2>Оформите выезд мастера</h2>
-                        <form id="tg" method="POST" action="sendTelegram.php">
+                        <form id="tg" method="POST" action="../sendTelegram.php">
                             <p>Заполните заявку<br>Или перезвоните нам!</p>
                             <input type="text" name="name" placeholder="Ваше имя">
                             <input type="text" name="phone" placeholder="Ваш телефон">
                             <textarea rows="5" cols="40" name="description"
                                 placeholder="Опишите вашу проблему"></textarea>
-                            <div class="main-body-order-submit" name="submit">
-                                <a href="tel:+79616918491">Отправить заявку</a>
-                            </div>
+                                <div class="g-recaptcha" data-sitekey="6LeWEJAiAAAAAFxvKaFwGu097wt7JzRs4OY1lyao"></div>
+                                <div class="main-body-order-submit" name="submit">
+                                    <button type="submit">Отправить сообщение</button>
+                                </div>
                         </form>
                     </div>
                     <div class="main-body-order-items col-12 col-md-7 container-fluid">

@@ -3,19 +3,68 @@
 <?php
 
 // сюда нужно вписать токен вашего бота
-define('TELEGRAM_TOKEN', '5756913387:AAHAs5fnle0_tp_DibQUMnIlHjoXCeX3e0w');
+// define('TELEGRAM_TOKEN', '5756913387:AAHAs5fnle0_tp_DibQUMnIlHjoXCeX3e0w'); доктор
+define('TELEGRAM_TOKEN', '5602655393:AAFzSQtL41LnkFn2qUmFqILl4jze8e0TQLM');
 
 // сюда нужно вписать ваш внутренний айдишник
-define('TELEGRAM_CHATID', '1961810723');
+// define('TELEGRAM_CHATID', '1961810723'); доктор
+define('TELEGRAM_CHATID', '708412997');
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['description'];
 $url = $_SERVER['HTTP_REFERER'];
 
-message_to_telegram("Имя: $name \nТелефон: $phone \nТекст: $message");
-echo("Ваше сообщение отправлено.\nСейчас Вы вернётесь на сайт.");
-echo("<meta http-equiv='refresh' content='5; url=$url'>");
+if($_SERVER["REQUEST_METHOD"] == "POST")
+{
+  $recaptcha=$_POST['g-recaptcha-response'];
+    if(!empty($recaptcha))
+    {
+ 
+        $google_url="https://www.google.com/recaptcha/api/siteverify";
+        $secret='6LeWEJAiAAAAAChp8Ap6Msoj0McRvVznBUrl-qhn';
+        $ip=$_SERVER['REMOTE_ADDR'];
+        $url=$google_url."?secret=".$secret."&response=".$recaptcha."&remoteip=".$ip;
+        $res=SiteVerify($url);
+        $res= json_decode($res, true);
+ 
+    //var_dump($res);
+        if($res['success'])
+        {
+            // Проверка каптчи пройдена успешно, продолжаем дальше выполнение проверки формы и т.д.
+            message_to_telegram("Имя: $name \nТелефон: $phone \nТекст: $message");
+            echo("Ваше сообщение отправлено.\nСейчас Вы вернётесь на сайт.");
+            echo("<meta http-equiv='refresh' content='5; url=https://doktorbyt.ru/'>");
+        }
+        else
+        {
+          // Проверка не пройдена
+            echo("Вы не поставили галочку и не подтвердили, что не являетесь роботом.\nСейчас Вы вернётесь на сайт.");
+            echo("<meta http-equiv='refresh' content='5; url=$url'>");
+        }
+ 
+    }
+    else
+    {
+          // Проверка не пройдена
+            echo("Вы не поставили галочку и не подтвердили, что не являетесь роботом.\nСейчас Вы вернётесь на сайт.");
+            echo("<meta http-equiv='refresh' content='5; url=$url'>");
+    }
+ 
+}
+
+function SiteVerify($url)
+{
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($curl, CURLOPT_TIMEOUT, 15);
+    curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36");
+    $curlData = curl_exec($curl);
+    curl_close($curl);
+    return $curlData;
+}
+
 
 function message_to_telegram($text)
 {
