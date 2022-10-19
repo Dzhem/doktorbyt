@@ -25,12 +25,10 @@
 <?php
 
 // сюда нужно вписать токен вашего бота
-// define('TELEGRAM_TOKEN', '5756913387:AAHAs5fnle0_tp_DibQUMnIlHjoXCeX3e0w'); доктор
-define('TELEGRAM_TOKEN', '5602655393:AAFzSQtL41LnkFn2qUmFqILl4jze8e0TQLM');
+define('TELEGRAM_TOKEN', '5756913387:AAHAs5fnle0_tp_DibQUMnIlHjoXCeX3e0w');
 
 // сюда нужно вписать ваш внутренний айдишник
-// define('TELEGRAM_CHATID', '1961810723'); доктор
-define('TELEGRAM_CHATID', '708412997');
+define('TELEGRAM_CHATID', '1961810723');
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
