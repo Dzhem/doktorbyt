@@ -327,6 +327,14 @@ header {
   border-bottom: 2px solid #e1e1e1;
 }
 
+dialog {
+  border: 2px solid #0080fa;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin: 50px auto;
+  text-align: center;
+}
+
 .navbar .nav-item {
   display: flex;
   align-items: center;

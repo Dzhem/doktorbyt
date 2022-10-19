@@ -1,5 +1,27 @@
-<meta charset="UTF-8" />
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      ДОКТОР-БЫТ - Качественный ремонт бытовой техники по низким ценам!
+    </title>
+    <meta
+      name="description"
+      content="Профессиональный ремонт бытовой техники на дому от ДОКТОР-БЫТ - срочный и надежный ремонт по приемлемым ценам. Установка бытовой техники. Гарантия! Скидки пенсионерам 10%!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css?v=2.2" />
+
+    <meta name="theme-color" content="#0080FA" />
+  </head>
+<body>
+  
 <?php
 
 // сюда нужно вписать токен вашего бота
@@ -33,22 +55,38 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         {
             // Проверка каптчи пройдена успешно, продолжаем дальше выполнение проверки формы и т.д.
             message_to_telegram("Имя: $name \nТелефон: $phone \nТекст: $message");
-            echo("Ваше сообщение отправлено.\nСейчас Вы вернётесь на сайт.");
+            // echo("Ваше сообщение отправлено.\nСейчас Вы вернётесь на сайт.");
             echo("<meta http-equiv='refresh' content='5; url=https://doktorbyt.ru/'>");
+            ?>
+            <dialog open>
+              Ваше сообщение отправлено.<br>
+              Сейчас Вы вернётесь на сайт.
+            </dialog>
+            <?php
         }
         else
         {
           // Проверка не пройдена
-            echo("Вы не поставили галочку и не подтвердили, что не являетесь роботом.\nСейчас Вы вернётесь на сайт.");
             echo("<meta http-equiv='refresh' content='5; url=$url'>");
+            ?>
+            <dialog open>
+            Вы не поставили галочку и не подтвердили, что не являетесь роботом.<br>
+            Сейчас Вы вернётесь на сайт.
+            </dialog>
+            <?php
         }
  
     }
     else
     {
           // Проверка не пройдена
-            echo("Вы не поставили галочку и не подтвердили, что не являетесь роботом.\nСейчас Вы вернётесь на сайт.");
             echo("<meta http-equiv='refresh' content='5; url=$url'>");
+            ?>
+            <dialog open>
+            Вы не поставили галочку и не подтвердили, что не являетесь роботом.<br>
+            Сейчас Вы вернётесь на сайт.
+            </dialog>
+            <?php
     }
  
 }
@@ -84,3 +122,7 @@ function message_to_telegram($text)
     );
     curl_exec($ch);
 }
+?>
+
+</body>
+</html>
